@@ -1,0 +1,21 @@
+%btn {
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+
+  &:hover {
+    background-color: rgba(168, 149, 149, 0.2);
+  }
+}
+
+.btn-number {
+  @extend %btn;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.btn-operator {
+  @extend %btn;
+  background-color: rgba(0, 0, 0, 0.3);
+}

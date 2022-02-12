@@ -43,15 +43,27 @@ body {
   padding: 10px;
 }
 
-/* @media screen and (max-width: 500px) {
-  .container {
-    width: 100%;
-    height: 100%;
-  }
-  .btn {
-    min-height: 60px !important;
-  }
-} */
+.btn-number, .btn-operator {
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn-number:hover, .btn-operator:hover {
+  background-color: rgba(168, 149, 149, 0.2);
+}
+
+.btn-number {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-operator {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .upperbox {
   height: auto;
   text-align: right;
@@ -112,40 +124,14 @@ body {
   padding: 10px;
   height: 50%;
   text-align: center;
-  /*   display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
-.row {
+.lowerbox .row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 3px;
   margin-bottom: 3px;
-}
-
-.btn {
-  /* min-width: 0px; */
-  /* height: auto; */
-  height: 60px;
-  width: 60px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.btn:hover {
-  background-color: rgba(168, 149, 149, 0.2);
-}
-
-.btn-number {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.btn-operator {
-  background-color: rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,49 @@
+@import "utilities";
+@import "buttons";
+
+.upperbox {
+  height: auto;
+  text-align: right;
+  padding: 20px 10px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: scroll;
+  #result {
+    height: 80px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 2rem;
+  }
+  #display {
+    height: 80px;
+    width: auto;
+    max-width: 270px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+  }
+  .upperbox::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+  }
+}
+
+.lowerbox {
+  padding: 10px;
+  height: 50%;
+  text-align: center;
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    margin-bottom: 3px;
+  }
+}
