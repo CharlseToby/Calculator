@@ -1,6 +1,18 @@
 @import "utilities";
 @import "buttons";
 
+::-webkit-scrollbar {
+  display: block;
+  height: 5px;
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba($color: white, $alpha: 0.1);
+}
 .upperbox {
   height: auto;
   text-align: right;
@@ -10,28 +22,19 @@
   flex-direction: column;
   justify-content: center;
   overflow-x: scroll;
-  #result {
-    height: 80px;
-    width: auto;
-    max-width: 270px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-size: 2rem;
-  }
+  #result,
   #display {
-    height: 80px;
-    width: auto;
+    height: 60px;
+    width: 100%;
     max-width: 270px;
+    outline: none;
+    border: none;
     background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 1.5rem;
-  }
-  .upperbox::-webkit-scrollbar {
     display: block;
-    height: 3px;
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; */
+    font-size: 1.6rem;
   }
 }
 
